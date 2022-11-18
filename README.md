@@ -5,7 +5,7 @@
 ## push
 ###### git add .
 ###### git commit -m "comment bich"
-###### git push origin checkout deeer uussen branch
+###### git push origin checkout deer uussen branch
 ## Анхаарах
 ###### 1. Сонгож авсан файлаасаа өөр файл оролдохгүй байх.
 ###### 2. Нэгийг анхаарах!
