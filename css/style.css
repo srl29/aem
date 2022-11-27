@@ -38,7 +38,7 @@ form{
     margin-bottom: 15px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    color: white;
+    color: black;
     border: 1px solid gray;
 }
 
@@ -48,12 +48,28 @@ form{
     align-items: center;
 }
 
+.Signupbuttoncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Loginbuttoncontainer>a>input{
-    margin-top: 10px;
+    margin-top: 2vh;
     width: 8vw;
     height: 5vh;
     background-color: rgba(255, 255, 255);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.Signupbuttoncontainer>a>input{
+    margin-top: 3vh;
+    width: 12vw;
+    height: 5vh;
+    background-color: rgb(168, 120, 58);
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .forgetpass>a{
