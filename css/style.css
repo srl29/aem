@@ -1,19 +1,63 @@
 body{
     margin: 0;
-    background-image: url(../images/back.jpg);
+    background-image: url('../images/back.jpg');
     height: 100%;
     width: 100%;
-    backdrop-filter: brightness(20%);
+    backdrop-filter: brightness(25%);
 }
-
+    
 .login-box{
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+    
+.login-box>img{
+    width: 20%;
+    height: 20%;
+}
+    
 label{
+    color: white;
+}
+
+form{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login-box>form>input{
+    width: 17vw;
+    height: 5vh;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: white;
+    border: 1px solid gray;
+}
+
+.Loginbuttoncontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Loginbuttoncontainer>a>input{
+    margin-top: 10px;
+    width: 8vw;
+    height: 5vh;
+    background-color: rgba(255, 255, 255);
+    border-radius: 5px;
+}
+
+.forgetpass>a{
+    text-decoration: none;
+    margin-left: 55%;
     color: white;
 }
