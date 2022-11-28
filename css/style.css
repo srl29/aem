@@ -42,32 +42,34 @@ form{
     border: 1px solid gray;
 }
 
-.Loginbuttoncontainer{
+.loginButtonContainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.Signupbuttoncontainer{
+.signUpButtonContainer{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Loginbuttoncontainer>a>input{
+.loginButtonContainer>a>input{
     margin-top: 2vh;
     width: 8vw;
     height: 5vh;
-    background-color: rgba(255, 255, 255);
+    background: linear-gradient(to right, #556fff, #ff798e, #556fff);
+    background-size: 200% auto;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.Signupbuttoncontainer>a>input{
+.signUpButtonContainer>a>input{
     margin-top: 3vh;
     width: 12vw;
     height: 5vh;
-    background-color: rgb(168, 120, 58);
+    background: linear-gradient(to right, #556fff, #ff798e, #556fff);
+    background-size: 200% auto;
     border-radius: 5px;
     cursor: pointer;
 }

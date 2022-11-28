@@ -2,3 +2,20 @@ body{
     background-color: #19222C;
     margin: 0;
 }
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    min-height: 100vh;
+}
+
+.header {
+    /* width: 100%; */
+    display: flex;
+    grid-area: header;
+    flex-direction: column;
+    align-items: center;
+}
