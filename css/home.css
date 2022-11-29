@@ -91,7 +91,11 @@ body{
     height: 45vh;
 }
 
-
+.links{
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+}
 .links>a{
     font-size: large;
     font-weight: 600;
@@ -112,7 +116,7 @@ body{
 }
 
 .footer{
-    background-color: #161616;
+    background-color: #0a131f;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,4 +130,8 @@ body{
 h2{
     color:white;
     font-family: sans-serif;
+}
+
+.dropdown{
+    color: white;
 }

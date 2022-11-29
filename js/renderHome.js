@@ -12,7 +12,7 @@ export class RenderHome {
               `<div>
                 <a href="./detail.html">
                   <div class="movie-img">
-                    <img src=${el.image} alt="ном" />
+                    <img src=${el.image} alt="кино" />
                   </div>
                 </a>
               </div>`
