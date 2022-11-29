@@ -1,7 +1,7 @@
 import  {RenderHome}  from "./renderHome.js";
 import { data } from "../datas/homePageData.js";
 
-let main = document.querySelector(".main");
+let main = document.querySelector(".mcontainer");
 
 const home_data = new RenderHome(data);
 

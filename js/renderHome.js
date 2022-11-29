@@ -5,7 +5,7 @@ export class RenderHome {
     render() {
       const dom = this.data.map((item, i) => (
         `
-        <article>
+        <article class="test">
           <h2>${item.category}</h2>
           <div class="movies">
             ${item.movies.map((el, i) => (
@@ -13,10 +13,6 @@ export class RenderHome {
                 <a href="./detail.html">
                   <div class="movie-img">
                     <img src=${el.image} alt="ном" />
-                  </div>
-                  <div class="tag">
-                    <p class="movie-title">${el.title}</p>
-                    <p class="movie-price">${el.price}</p>
                   </div>
                 </a>
               </div>`
