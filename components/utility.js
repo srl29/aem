@@ -1,2 +1,3 @@
-const html = String.raw;
-export default html;
+// //component test
+// const html = String.raw;
+// export default html;

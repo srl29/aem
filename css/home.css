@@ -1,25 +1,43 @@
-body{
+body {
     background-color: #19222C;
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
     height: auto;
-    
+
+}
+
+p {
+    margin: 0;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    width: 10px;
 }
 
-.container{
+::-webkit-scrollbar-track {
+    background: #19222C;
+}
 
-    display: grid;
+::-webkit-scrollbar-thumb {
+    background: #243344;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2f4156;
+}
+
+.container {
+    /* display: grid;
     grid-template-columns: 100%;
     grid-template-areas: 
     "header"
-    "main"
+    "main_container"
     "footer";
     min-height: 100vh;
-    max-width: 100vw;
+    max-width: 100vw; */
+    display: flex;
+    flex-direction: column;
     gap: 8vh;
 }
 
@@ -32,71 +50,114 @@ body{
     width: 100%;
 }
 
-.header_main{
+.header_main {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.main{
-    display: flex;
-    justify-content: center;
-}
-.test{
+
+.test {
     width: 100%;
-    
+
 }
-.mcontainer{
+
+.movie_list {
     display: flex;
+    overflow-x: hidden;
+    max-width: 100%;
     flex-direction: column;
-    align-items: center;
-    width: 90vw;
-    max-width:90vw;
-    
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+.no-dec {
+    text-decoration: none;
+}
 
-
-.movies{
+.movies {
     display: flex;
-    justify-content: space-between;
+    overflow-x: hidden;
+    transition: 200ms;
 }
 
 
-.movie-img>img{
+.movie-img>div {
     width: 15vw;
     height: 45vh;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+
 }
 
-.headerUp{
+.movie-img>div>.types {
+    display: flex;
+    padding: 8px 4px 4px 4px;
+
+}
+
+.movie-img>div>.types>.element {
+    padding: 2px 10px 2px 10px;
+    background-color: #FED530;
+    color: #2E2E2E;
+    border-radius: 8px;
+}
+
+.headerUp {
     display: flex;
     width: 90vw;
-    max-width:90vw;
+    max-width: 90vw;
     align-items: center;
     justify-content: space-between;
 
 
 }
 
-.headerDown{
-    height: 45vh; 
+.intro_images {
     max-width: 100vw;
-    display: flex;
-    justify-content: center;
-
-}
-
-.headerDown>img{
-    width: 100vw;
     height: 45vh;
+
 }
 
-.links{
+
+.intro_images>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes sliding {
+    0% {
+        transform: translateX(0px);
+    }
+
+    38% {}
+
+    40% {
+        transform: translateX(-100vw);
+    }
+
+    78% {}
+
+    80% {
+        transform: translateX(-200vw);
+    }
+
+    100% {}
+
+}
+
+
+.links {
     width: 50vw;
     display: flex;
     justify-content: space-evenly;
 }
-.links>a{
+
+.links>a {
     font-size: large;
     font-weight: 600;
     text-decoration: none;
@@ -104,18 +165,19 @@ body{
     font-family: sans-serif;
 
 }
-.links>a:hover{
+
+.links>a:hover {
     text-decoration: underline;
 
-    
+
 }
 
-.headerLogo{
+.headerLogo {
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
 
-.footer{
+.footer {
     background-color: #0a131f;
     display: flex;
     justify-content: space-between;
@@ -123,15 +185,66 @@ body{
     padding-right: 1%;
 }
 
-.footer>address{
+.footer>address {
     color: white;
 }
 
-h2{
-    color:white;
+h2 {
+    color: white;
     font-family: sans-serif;
 }
 
-.dropdown{
+.dropdown>i {
+    cursor: pointer;
     color: white;
+    position: relative;
+}
+
+.dropdown>.dropdown-content {
+    transition: 200ms;
+    display: none;
+    position: absolute;
+    background-color: rgb(240, 230, 230, 0.8);
+    padding: 10px 20px 20px 10px;
+    margin-top: 10px;
+}
+
+.slider_button_container {
+    width: 100vw;
+    position: relative;
+    bottom: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous_click {
+    margin-left: 8px;
+    background-color: rgb(64, 64, 60, 0.8);
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 32px;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.previous_click:hover,
+.next_click:hover {
+    transition: 200ms;
+    background-color: rgb(64, 64, 60, 0.9);
+}
+
+.next_click {
+    margin-right: 40px;
+    font-size: 32px;
+    background-color: rgb(64, 64, 60, 0.8);
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
 }

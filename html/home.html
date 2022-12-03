@@ -1,64 +1,76 @@
 <!DOCTYPE html>
 <html lang="mn">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Put your description here.">
-        <link rel="stylesheet" href="../css/home.css">
-        <script src="https://kit.fontawesome.com/c43aa37865.js" crossorigin="anonymous" async></script>
-        <script type="module" src="../js/index.js" defer></script>
-        <title>MovieMax</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <section class="header_main">
-                    <div class="headerUp">
-                        <div class="headerLogo">
-                            <img src="../images/logo.png" alt="MovieMax">
-                            <div class="links">
-                                <a href="./index.html">Эхлэл</a>
-                                <a href="./movie.html">Бүрэн хэмжээний</a>
-                                <a href="./series.html">Цуврал</a>
-                                <a href="./favorite.html">Дуртай</a>
-                                <a href="./payment.html">Эрх нээлгэх</a>
-                            </div>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Put your description here.">
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="https://kit.fontawesome.com/c43aa37865.js" crossorigin="anonymous" async></script>
+    <script type="module" src="../js/index.js" defer></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <title>MovieMax</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <section class="header_main">
+                <div class="headerUp">
+                    <div class="headerLogo">
+                        <img src="../images/logo.png" alt="MovieMax">
+                        <div class="links">
+                            <a href="./index.html">Эхлэл</a>
+                            <a href="./movie.html">Бүрэн хэмжээний</a>
+                            <a href="./series.html">Цуврал</a>
+                            <a href="./favorite.html">Дуртай</a>
+                            <a href="./payment.html">Эрх нээлгэх</a>
                         </div>
-                      
-                                           
-                        <div class="dropdown">
-                            <!-- <button class="profile"> -->
-                                <i class="fas fa-user"></i>
-                            <!-- </button> -->
-                            <!-- <div class="dropdown-content">
-                                <a href="./settings.html">Тохиргоо</a>
-                                <a href="./login.html">Гарах</a>
-                            </div> -->
+
+                    </div>
+
+
+                    <div class="dropdown">
+                        <!-- <button class="profile"> -->
+                        <i class="fas fa-user" onclick="show_dropdown()"></i>
+                        <!-- </button> -->
+                        <div class="dropdown-content" id="dropdown_content">
+                            <a href="./settings.html">
+                                <p> Тохиргоо</p>
+                            </a>
+                            <a href="./login.html">
+                                <p> Гарах</p>
+                            </a>
                         </div>
-                    </div>
-                    <div class="headerDown">
-                        <img src="../images/slide1.png" alt="trialer">
-                    </div>
-                   
-
-                </section>
-            </header>
-            <main>
-                <div class="main">
-                    <div class="mcontainer" >
-
                     </div>
                 </div>
-            </main>
-            <footer class="footer">
-                <img src="../images/logo.png" alt="logo">
-                <address>
-                  Байршил: <span>Чингисийн өргөн чөлөө, СБД, Улаанбаатар</span> <br/> Имэйл: <span>moviemax@mo.mn</span> <br/> Утас: <span>94399344</span>
-                </address>
-                
-            </footer>
+
+
+
+            </section>
+        </header>
+
+        <div class="intro_images">
+            <img src="../images/slide1.png" alt="trialer">
         </div>
-    </body>
+    </div>
+    </div>
+    <div class="movie_list">
+        <div id="movie_container" />
+    </div>
+
+    </div>
+
+    <footer class="footer">
+        <img src="../images/logo.png" alt="logo">
+        <address>
+            Байршил: <span>Чингисийн өргөн чөлөө, СБД, Улаанбаатар</span> <br /> Имэйл: <span>moviemax@mo.mn</span>
+            <br /> Утас: <span>94399344</span>
+        </address>
+
+    </footer>
+</body>
+
+
 </html>
