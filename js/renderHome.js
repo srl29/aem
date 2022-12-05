@@ -11,9 +11,10 @@ export class RenderHome {
           <h2>${item.category}</h2>
         </article>
         <div class="movies" id="slide_show_${index}">
-            ${item.movies.map(
-              (el) =>
-                `<div id="movie-no-${el.id}">
+            ${item.movies
+              .map(
+                (el) =>
+                  `<div id="movie-no-${el.id}">
                       <a class="no-dec" href="./detail-${el.id}.html">
                         <div class="movie-img">
                           <div class="background_list" style="background:url(${
@@ -25,13 +26,14 @@ export class RenderHome {
                                   (element) =>
                                     `<span class="element">${element}</span>`
                                 )
-                                .join("")}
+                                .join(" ")}
                         </div>
                       </div>
                   </div>
                 </a>
               </div>`
-            )}
+              )
+              .join("")}
           </div>
           <div class="slider_button_container">
           <span onclick="previous(${index})" class="previous_click"><</span>

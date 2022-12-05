@@ -15,7 +15,7 @@ export const data = [
       {
         id: 3,
         image: "../images/movie3.jpg",
-        type: ["ГЭМТ ХЭРЭГ", "УЯНГА"],
+        type: ["ГЭМТ ХЭРЭГ", "УЯНГА", "ГЭР БҮЛ"],
       },
       {
         id: 4,

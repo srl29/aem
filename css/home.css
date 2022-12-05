@@ -71,6 +71,7 @@ p {
     display: flex;
     overflow-x: hidden;
     transition: 200ms;
+    gap: 0.5%;
 }
 
 
@@ -86,6 +87,7 @@ p {
 
 .movie-img>div>.types {
     /* display: flex; */
+    grid-auto-rows: 10rem;
     padding: 8px 4px 4px 4px;
 }
 
@@ -94,7 +96,6 @@ p {
     background-color: #FED530;
     color: #161616;
     border-radius: 8px;
-
 }
 
 .headerUp {
