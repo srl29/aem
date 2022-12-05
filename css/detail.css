@@ -1,106 +1,156 @@
-/* Google Fonts - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+}
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+body{
+  background: black;
+}
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+ body{
+  background-color: black;
+ }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+.main-menu {
+background: rgb(22, 22, 22);
+border-right: 0;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+right: 0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
 }
-body {
-  min-height: 100%;
-  background: #e3f2fd;
+
+.main-menu>ul {
+margin:7px 0;
 }
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>button {
+position:relative;
+display:table;
+border: none;
+border-collapse:collapse;
+border-spacing:0;
+background: rgb(22, 22, 22);
+color: rgb(255, 255, 255);
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+
+
+.main-menu>ul.expand {
+position:absolute;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+button:hover,button:focus {
+text-decoration:none;
+}
+
 nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 70px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background: #fff;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-}
-nav .logo {
-  display: flex;
-  align-items: center;
-  margin: 0 24px;
-}
-.logo .menu-icon {
-  color: #333;
-  font-size: 24px;
-  margin-right: 14px;
-  cursor: pointer;
-}
-.logo .logo-name {
-  color: #333;
-  font-size: 22px;
-  font-weight: 500;
-}
-nav .sidebar {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  height: 100%;
-  width: 260px;
-  padding: 20px 0;
-  background-color: #fff;
-  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s ease;
-}
-nav.open .sidebar {
-  right: 0;
-}
-.sidebar .sidebar-content {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px 16px;
-}
-.sidebar-content .list {
-  list-style: none;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
 }
 
-.list .nav-link {
-  display: flex;
-  align-items: center;
-  margin: 8px 0;
-  padding: 14px 12px;
-  border-radius: 8px;
-  text-decoration: none;
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
 }
-.lists .nav-link:hover {
-  background-color: #4070f4;
+.main-menu li:hover>button,
+nav.main-menu li.active>button,
+.dropdown-menu>li>button:hover,
+.dropdown-menu>li>button:focus,
+.dropdown-menu>.active>button,
+.dropdown-menu>.active>button:hover,
+.dropdown-menu>.active>button:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover button,
+.dashboard-page nav.dashboard-menu ul li.active button {
+color:rgb(22, 22, 22);
+background-color:rgb(255, 255, 255);
 }
-.nav-link .icon {
-  margin-right: 14px;
-  font-size: 20px;
-  color: #707070;
+.area {
+float: left;
+background: rgb(22, 22, 22);
+width: 100%;
+height: 100%;
 }
-.nav-link .link {
-  font-size: 16px;
-  color: #707070;
-  font-weight: 400;
+
+
+
+.sideCont{
+  color: rgb(255, 255, 255);
+  background: rgb(22, 22, 22);
+  
+  margin-right: 61px;
+  text-align: center;
+  position:absolute;
+  top:0;
+  bottom:0;
+  height:100%;
+  right: 0;
+  width:20%;
+  overflow:hidden;
+  -webkit-transition:width .05s linear;
+  transition:width .05s linear;
+  -webkit-transform:translateZ(0) scale(1,1);
+  z-index:1000;
 }
-.lists .nav-link:hover .icon,
-.lists .nav-link:hover .link {
-  color: #fff;
 }
-.overlay {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  height: 1000vh;
-  width: 200%;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s ease;
-  background: rgba(0, 0, 0, 0.3);
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
 }
-nav.open ~ .overlay {
-  opacity: 1;
-  right: 260px;
-  pointer-events: auto;
-}
+
