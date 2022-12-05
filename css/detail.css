@@ -106,13 +106,8 @@ outline:0;
 margin:0;
 padding:0;
 }
-.main-menu li:hover>button,
+.main-menu li:hover button,
 nav.main-menu li.active>button,
-.dropdown-menu>li>button:hover,
-.dropdown-menu>li>button:focus,
-.dropdown-menu>.active>button,
-.dropdown-menu>.active>button:hover,
-.dropdown-menu>.active>button:focus,
 .no-touch .dashboard-page nav.dashboard-menu ul li:hover button,
 .dashboard-page nav.dashboard-menu ul li.active button {
 color:rgb(22, 22, 22);
@@ -153,4 +148,19 @@ height: 100%;
   font-weight: 300;
   src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
 }
+
+
+
+
+.featuredBtn.active {
+  color:rgb(22, 22, 22);
+  background-color:rgb(255, 255, 255);
+}
+
+.featuredBtn {
+  background: rgb(22, 22, 22);
+  color: rgb(255, 255, 255);
+}
+
+
 

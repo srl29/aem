@@ -8,31 +8,51 @@
     <!--<title>Sidebar Menu | Side Navigation Bar</title>-->
     <!-- CSS -->
     <link rel="stylesheet" href="/css/detail.css" />
-    <script type="module" src="/js/detail.js" defer></script>
+    <script  src="/js/detail.js"></script>
     <linkrel="stylesheet"/>
   </head>
   <body>
-    <div class="area"> </div>
-    <div class="sideCont" id="myDIV">
-      <h2>Sherlock holmes</h2>
-      <p>ohn Watson. In 1890, eccentric detective Holmes and his companion Watson are hired by a secret society to foil a mysticist's plot to gain control of Britain by seemingly supernatural means. Rachel McAdams stars as their former adversary Irene Adler and Mark Strong portrays villain Lord Henry Blackwood.</p>
+    <div>
+      <video width="1130" height="700" controls>
+        <source src="movie.mp4" type="video/mp4">
+      </video>
     </div>
+    <div class="area"> </div>
+
+    <div class="sideCont" id="side">
+      <div id="text">
+        <h2>Sherlock holmes</h2>
+        <p>ohn Watson. In 1890, eccentric detective Holmes and his companion Watson are hired by a secret 
+          society to foil a mysticist's plot to gain control of Britain by seemingly supernatural means. 
+          Rachel McAdams stars as their former adversary Irene Adler and Mark Strong portrays villain Lord Henry Blackwood.</p>
+      </div>
+      
+      <div id="episodes" style="display: none;">
+        <h2>sadsdaasSherlock holmes</h2>
+      </div>
+      
+      <div id="comment" style="display: none;">
+        <h2>sadsdaasSdsadadherlock holmes</h2>
+      </div>
+      
+    </div>
+
     <nav class="main-menu">
     <ul class="buttons">
-        <li>
-              <button id="buttonClose" onclick="myFunction()"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
-        </li>
-
-        <li class="active">
-              <button class="active" id="buttonText" onclick="myFunction()"><i class="fa fa-file-text-o" aria-hidden="true"></i></button> 
+        <li class="has-subnav">
+              <button  class="" id="buttonClose" onclick="close();"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
         </li>
 
         <li class="has-subnav">
-              <button id="buttonEpisode" onclick="myFunction()"><i class="fa fa-list fa-2x"></i></button>
+              <button  class="featuredBtn active" id="buttonText" onclick="text();"><i class="fa fa-file-text-o" aria-hidden="true"></i></button> 
         </li>
 
         <li class="has-subnav">
-              <button id="buttonComment" onclick="myFunction()"><i class="fa fa-comments" aria-hidden="true"></i></button>
+              <button  class="featuredBtn" id="buttonEpisode" onclick="episodes(); return false"><i class="fa fa-list fa-2x"></i></button>
+        </li>
+
+        <li class="has-subnav">
+              <button  class="featuredBtn" id="buttonComment" onclick="comment();"><i class="fa fa-comments" aria-hidden="true"></i></button>
         </li>
 
     </ul>
@@ -42,7 +62,7 @@
     <ul class="expand">
         <li>
   
-            <button id="buttonExpand" onclick="myFunction()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            <button id="buttonExpand" onclick="arrow()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 
         </li>  
     </ul>
@@ -50,15 +70,62 @@
 
 
 <script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
+  $('.featuredBtn').on('click', function() {
+      let featureBtn = $('.featuredBtn');
+  
+      if(featureBtn.hasClass('active')) {
+          featureBtn.removeClass('active');
+          $(this).addClass('active');
+      }
+  });
+
+function arrow() {
+  var x = document.getElementById("side");
+  if (!x.style.display | x.style.display == "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
 }
+
+function text() {
+  var x = document.getElementById("text");
+  if (!x.style.display | x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function episodes() {
+  var x = document.getElementById("episodes");
+  if (!x.style.display | x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function comment() {
+  var x = document.getElementById("comment");
+  if (!x.style.display | x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function close() {
+  var x = document.getElementById("");
+  if (! x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 </script>
+
 </body>
 </html>
 
