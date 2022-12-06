@@ -89,6 +89,7 @@ p {
     /* display: flex; */
     grid-auto-rows: 10rem;
     padding: 8px 4px 4px 4px;
+    
 }
 
 .movie-img>div>.types>.element {
