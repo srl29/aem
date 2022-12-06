@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<!-- Coding by CodingLab | www.codinglabweb.com-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<title>Sidebar Menu | Side Navigation Bar</title>-->
-    <!-- CSS -->
+    <meta name="description" content="Put your description here.">
     <link rel="stylesheet" href="/css/detail.css" />
     <script  src="/js/detail.js"></script>
     <linkrel="stylesheet"/>
+    <title>movie max player</title>
   </head>
   <body>
     <div>
-      <video width="1130" height="700" controls>
-        <source src="movie.mp4" type="video/mp4">
-      </video>
+        <iframe style="position: relative;" width="1158" height="690" src="https://www.youtube.com/embed/V0FIUz5OpT4" title="MISS SHERLOCK Official Trailer (HD) Japanese HBO Series" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="area"> </div>
 
     <div class="sideCont" id="side">
       <div id="text">
         <h2>Sherlock holmes</h2>
-        <p>ohn Watson. In 1890, eccentric detective Holmes and his companion Watson are hired by a secret 
+        <h5 style="text-align: left; padding-left: 3em;">2018 оны 5 сар 18</h5>
+        <p style="text-align: left; padding-left: 1em;">  ohn Watson. In 1890, eccentric detective Holmes and 
+          his companion Watson are hired by a secret 
           society to foil a mysticist's plot to gain control of Britain by seemingly supernatural means. 
           Rachel McAdams stars as their former adversary Irene Adler and Mark Strong portrays villain Lord Henry Blackwood.</p>
       </div>
@@ -40,24 +39,24 @@
     <nav class="main-menu">
     <ul class="buttons">
         <li class="has-subnav">
-              <button  class="" id="buttonClose" onclick="close();"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
+              <button  class="" id="buttonClose" title="close" onclick="history.back()"><i class="fa fa-times-circle-o" aria-hidden="true"></i></button>
         </li>
 
         <li class="has-subnav">
-              <button  class="featuredBtn active" id="buttonText" onclick="text();"><i class="fa fa-file-text-o" aria-hidden="true"></i></button> 
+              <button  class="featuredBtn active" id="buttonText" title="description" onclick="text();" ><i class="fa fa-file-text-o" aria-hidden="true"></i></button> 
         </li>
 
         <li class="has-subnav">
-              <button  class="featuredBtn" id="buttonEpisode" onclick="episodes(); return false"><i class="fa fa-list fa-2x"></i></button>
+              <button  class="featuredBtn" id="buttonEpisode" title="episodes" onclick="episodes(); return false"><i class="fa fa-list fa-2x"></i></button>
         </li>
 
         <li class="has-subnav">
-              <button  class="featuredBtn" id="buttonComment" onclick="comment();"><i class="fa fa-comments" aria-hidden="true"></i></button>
+              <button  class="featuredBtn" id="buttonComment" title="comments" onclick="comment();"><i class="fa fa-comments" aria-hidden="true"></i></button>
         </li>
 
     </ul>
 
-
+<!--
     
     <ul class="expand">
         <li>
@@ -66,6 +65,7 @@
 
         </li>  
     </ul>
+    CSS -->
 </nav>
 
 
@@ -79,6 +79,12 @@
       }
   });
 
+  /*$('.featuredBtn').not($this.parents()).each(function(){
+         $(this).removeClass('active');
+     });
+
+ 
+     
 function arrow() {
   var x = document.getElementById("side");
   if (!x.style.display | x.style.display == "none") {
@@ -87,14 +93,13 @@ function arrow() {
     x.style.display = "none";
   }
 }
+*/
 
 function text() {
   var x = document.getElementById("text");
   if (!x.style.display | x.style.display == "none") {
     x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+  } 
 }
 
 function episodes() {
