@@ -44,14 +44,33 @@ p {
 
 .header_main {
     width: 100%;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    column-gap: 2%;
+    /* justify-content: center;
+    flex-direction: column; */
+}
+
+.headerLogo {
+    width: 100%;
+    height: 15vh;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .test {
     width: 100%;
 
+}
+
+.sda{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .movie_list {
@@ -99,15 +118,13 @@ p {
     border-radius: 8px;
 }
 
-.headerUp {
-    display: flex;
-    width: 90vw;
-    max-width: 90vw;
-    align-items: center;
-    justify-content: space-between;
 
 
-}
+/* .headerLogo > img{
+    
+} */
+
+
 
 .intro_images {
     height: 45%;
@@ -168,10 +185,8 @@ p {
 
 }
 
-.headerLogo {
-    display: flex;
-    align-items: center;
-}
+
+
 
 .footer {
     background-color: #0a131f;
