@@ -1,80 +1,79 @@
-body{
-    margin: 0;
-    background-image: url('../images/back.webp');
-    height: 100%;
-    width: 100%;
-    backdrop-filter: brightness(25%);
-}
-    
-.login-box{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-    
-.login-box>img{
-    width: 20%;
-    height: 20%;
-}
-    
-label{
-    color: white;
+body {
+  margin: 0;
+  background-image: url("../images/back.webp");
+  height: 100%;
+  width: 100%;
+  backdrop-filter: brightness(25%);
 }
 
-form{
-    height: 50%;
-    display: flex;
-    flex-direction: column;
+.login-box {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.login-box>form>input{
-    width: 17vw;
-    height: 5vh;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    color: black;
-    border: 1px solid gray;
+.login-box > img {
+  width: 20%;
+  height: 20%;
 }
 
-.loginButtonContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+label {
+  color: white;
 }
 
-.signUpButtonContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+form {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-.loginButtonContainer>a>input{
-    margin-top: 2vh;
-    width: 8vw;
-    height: 5vh;
-    background: linear-gradient(to right, #556fff, #ff798e, #556fff);
-    background-size: 200% auto;
-    border-radius: 5px;
-    cursor: pointer;
+.login-box > form > input {
+  width: 17vw;
+  height: 5vh;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  color: black;
+  border: 1px solid gray;
 }
 
-.signUpButtonContainer>a>input{
-    margin-top: 3vh;
-    width: 12vw;
-    height: 5vh;
-    background: linear-gradient(to right, #556fff, #ff798e, #556fff);
-    background-size: 200% auto;
-    border-radius: 5px;
-    cursor: pointer;
+.loginButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.forgetpass>a{
-    text-decoration: none;
-    color: white;
+.signUpButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginButtonContainer > a > input {
+  margin-top: 2vh;
+  width: 8vw;
+  height: 5vh;
+  background: linear-gradient(to right, #556fff, #ff798e, #556fff);
+  background-size: 200% auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signUpButtonContainer > a > input {
+  margin-top: 3vh;
+  width: 12vw;
+  height: 5vh;
+  background: linear-gradient(to right, #556fff, #ff798e, #556fff);
+  background-size: 200% auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.forgetpass > a {
+  text-decoration: none;
+  color: white;
 }
