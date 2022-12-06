@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-image: url('../images/back.jpg');
+    background-image: url('../images/back.webp');
     height: 100%;
     width: 100%;
     backdrop-filter: brightness(25%);
